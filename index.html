@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="saad()">Click me</button>
+    <button onclick="now()">Click me</button>
+
+    <script>
+
+//   Q1
+let greeting = "Hello! This is a practice string in javascript"
+let substring =greeting.slice(17,25)
+document.write("<br>",substring)
+
+//Q2
+var extract = greeting.replace("javascript","node.js")
+document.write("<br>",extract)
+
+//Q3
+var inedxx=greeting.indexOf("is")
+document.write("<br>",inedxx)
+
+//Q4
+var ques = greeting.slice(7,18)
+
+document.write( "<br>",ques)
+
+//Q5
+var num1 = (Math.random())
+var num = Math.round(num1)
+if(num==1){
+    document.write("heead")
+}else if (num==0){
+    document.write("tail")
+
+}else{
+    document.write("Try Agaoin")
+
+}
+//Q6
+var user = "5"   
+   var userfind = Math.round(Math.random()*10)   
+   if(user==userfind){
+    console.log(userfind + "Win" );
+   } else if(user<userfind){
+    console.log(userfind + "You number is small");
+   }else{
+    console.log(userfind  + "Greater");
+   }
+//Q7
+   var color1 = Math.round(Math.random()*990+10090)
+   var color2 = Math.round(Math.random()*10)
+   var color3 = Math.round(Math.random()*10)
+
+document.write(color1+color2+color3)
+console.log(color1);
+document.write(rgb( $[c]))
+var num =4.5365
+var str = num.toString(); 
+if (str.charAt(str.length - 1) === "5") {
+str = str.slice(0, str.length - 1) + "6";
+}
+num = Number(str);
+
+
+ var prettyNum = num.toFixed(5);
+document.write(prettyNum)
+//Q9
+var vava = "raju"
+var count = 0
+for(let i = 0 ; i<vava.length;i++){
+if(vava[i]=="a"||vava[i]=="i"||vava[i]=="o"||vava[i]=="e"||vava[i]=="u"){
+count++
+}
+
+
+}
+
+
+
+document.write(count,"")
+//Q10
+var d = new Date()
+document.write(d)
+
+document.write(now.getDate(),"/",now.getMonth()+1,"/",now.getFullYear())
+
+//Q12
+var currentHrs = d.getHours();
+var mint = d.getMinutes()
+var sec = d.getSeconds()
+if(currentHrs>12){
+currentHrs=currentHrs-12
+if(currentHrs<10){
+    currentHrs="0"+currentHrs
+}
+    document.write(currentHrs,":",mint,":",sec," pm")
+
+}else if(currentHrs<12){
+    document.write(currentHrs,":",mint,":",sec,"  am")
+
+}
+document.write(d)
+
+//Q13
+function saad(){
+    for(let i =0 ; i <9;i++){
+    var ran = Math.floor(Math.random()+1)
+    console.log(ran);}
+}
+
+//Q14
+function now(){
+    var ran = Math.floor(Math.random()*10)
+    alert(ran)
+    var num =prompt("enter your number to matched with random")
+if(ran==num){
+    alert("your number matched")
+}else{
+    alert("Try again")
+}
+}
+    </script>
+</body>
+</html>
